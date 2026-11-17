@@ -66,7 +66,7 @@ p{font-size:18px;line-height:1.8}.urdu{font-family:'Noto Nastaliq Urdu','Noto Na
 <button class="goldbtn" id="start">OPEN YOUR SPECIAL SURPRISE ✨</button></div></section>
 
 <section class="page" id="poetry"><div class="inner">
-<div class="kicker">A DUAA FROM THE HEART</div><div class="roses">🌹 ✨ 🌹</div><h2>سالگرہ مبارک ہو باس</h2>
+<div class="kicker">A DUAA FROM THE HEART</div><div class="roses">🌹 ✨ 🌹</div><h2>HAPPY BIRTHDAY BOSS!</h2>
 <div class="urdu">آپ کے نام ہو خوشیوں بھرا ہر ایک دن،<br>روشن رہے کامیابی سے آپ کا ہر اک سفر۔<br>ہر نئی صبح نئی امیدیں ساتھ لے کر آئے،<br>رب کرے آپ کا ہر خواب حقیقت بن جائے۔</div>
 <p>May your life always be filled with happiness, respect and success.</p><button data-go="cakepage">A CAKE FOR THE BEST BOSS 🎂</button></div></section>
 
@@ -77,7 +77,7 @@ p{font-size:18px;line-height:1.8}.urdu{font-family:'Noto Nastaliq Urdu','Noto Na
 <div class="cake-top"></div>
 <div class="candle c1"><div class="flame"></div></div><div class="candle c2"><div class="flame"></div></div><div class="candle c3"><div class="flame"></div></div>
 </div></div>
-<p>A little birthday wish, made just for you. Blow out the candles!</p><div class="urdu">دل سے دعا مانگیں، اور موم بتیاں بجھائیں۔</div>
+<p>A little birthday wish, made just for you. Blow out the candles!</p>
 <button id="blow">🌬️ BLOW THE CANDLES</button><p id="after" style="display:none;color:#f6d894">May all your good wishes come true! ✨</p><button id="finish" style="display:none">ONE LAST WISH 💌</button></div></section>
 
 <section class="page" id="last"><canvas id="fireworks"></canvas><div class="inner">
