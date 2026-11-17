@@ -28,7 +28,23 @@ page = r"""
 <style>
 *{box-sizing:border-box}html,body{margin:0;background:#070605;color:#f8e8c4;font-family:'Playfair Display',Georgia,serif}
 #intro{height:100vh;min-height:650px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
-.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%;filter:brightness(.63);animation:zoom 2s}
+.photo{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center 15%;
+    filter:brightness(.63);
+    animation:zoom 2s;
+}
+@media(max-width:600px){
+    .photo{
+        object-fit:contain;
+        object-position:center center;
+        background:#070605;
+    }
+}
 @keyframes zoom{from{transform:scale(1.08)}to{transform:scale(1)}}
 .shade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 20%,rgba(0,0,0,.18) 40%,rgba(0,0,0,.86))}
 .hero{position:relative;z-index:2;width:95%;padding:20px 8px}
