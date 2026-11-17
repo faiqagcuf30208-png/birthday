@@ -76,6 +76,106 @@ p{font-size:18px;line-height:1.8}.urdu{font-family:'Noto Nastaliq Urdu','Noto Na
 @media(max-width:420px){.cake{transform:scale(.9);transform-origin:center center;margin-top:30px;margin-bottom:10px}}
 #fireworks{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 @media(max-width:600px){#intro{height:100svh;min-height:630px}.photo{object-position:center 20%}.date{letter-spacing:4px}.word{letter-spacing:0}.page{min-height:100svh;padding:25px 10px}p{font-size:16px}button{width:min(92%,320px);margin:8px auto}.cake{transform:scale(.9)}}
+
+/* MOBILE: Each page fits on one screen */
+@media (max-width: 600px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden !important;
+    }
+
+    #intro {
+        height: 100svh;
+        min-height: 0;
+        overflow: hidden;
+    }
+
+    .hero {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .date {
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+
+    .word {
+        font-size: clamp(42px, 12vw, 64px);
+        line-height: 1.05;
+    }
+
+    .crown {
+        font-size: 38px;
+    }
+
+    .page {
+        height: 100svh;
+        min-height: 0;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    .inner {
+        width: 100%;
+        max-height: calc(100svh - 20px);
+        overflow: hidden;
+        padding: 14px 10px;
+        border-radius: 16px;
+    }
+
+    .inner h1 {
+        font-size: clamp(27px, 8vw, 38px);
+        margin: 10px 0;
+    }
+
+    .inner h2 {
+        font-size: 24px;
+        margin: 8px 0;
+    }
+
+    .inner p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 10px 0;
+    }
+
+    .urdu {
+        font-size: 18px;
+        line-height: 2.1;
+        margin: 8px auto;
+    }
+
+    .roses {
+        font-size: 30px;
+        margin: 5px;
+    }
+
+    .cake-scene {
+        padding: 12px 0;
+    }
+
+    .cake {
+        transform: scale(.72);
+        transform-origin: center center;
+        margin: -25px auto;
+    }
+
+    button {
+        width: 90%;
+        max-width: 300px;
+        padding: 11px 12px;
+        margin: 6px auto;
+        font-size: 12px;
+    }
+
+    .kicker {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+}
+
 </style></head><body>
 <section id="intro"><img class="photo" src="__PHOTO__"><div class="shade"></div><div class="hero">
 <div class="date">19 NOVEMBER</div><span class="word happy">HAPPY</span><span class="word birthday">BIRTHDAY</span><span class="word boss">BOSS</span><div class="crown">👑</div>
@@ -113,4 +213,4 @@ document.getElementById('again').addEventListener('click',()=>{if(raf)cancelAnim
 </script></body></html>
 """
 page = page.replace("__PHOTO__", photo_url)
-components.html(page, height=1000, scrolling=True)
+components.html(page, height=750, scrolling=False)
